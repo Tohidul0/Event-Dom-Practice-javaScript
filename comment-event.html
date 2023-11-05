@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment box add in website</title>
+</head>
+<body>
+    <head>
+           <h1>hi! comment here</h1>
+    </head>
+    <section>
+        <div id="container-box">
+            <p>jklvbhffdlvfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdvfdvfdvfdvfdvfdvfdvfdvfdvfdvfdvbbifd;ihvffffffffffffffffffffffffuoisklcnhduivhyofvijnklvbhfder8pyhfkilndsjkchfduvihflkcnerfl;mjvoirv65er54g6
+                e6g9v7jhfruiryh
+                j;vhnfjikddddddddddddohnu;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci
+            </p>
+            <p>jklvbhffdlvfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdvfdvfdvfdvfdvfdvfdvfdvfdvfdvfdvbbifd;ihvffffffffffffffffffffffffuoisklcnhduivhyofvijnklvbhfder8pyhfkilndsjkchfduvihflkcnerfl;mjvoirv65er54g6
+                e6g9v7jhfruiryh
+                j;vhnfjikddddddddddddohnu;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci
+            </p>
+            <p>jklvbhffdlvfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdvfdvfdvfdvfdvfdvfdvfdvfdvfdvfdvbbifd;ihvffffffffffffffffffffffffuoisklcnhduivhyofvijnklvbhfder8pyhfkilndsjkchfduvihflkcnerfl;mjvoirv65er54g6
+                e6g9v7jhfruiryh
+                j;vhnfjikddddddddddddohnu;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci;ci
+            </p>
+        </div>
+        <div>
+            <textarea name="" id="comment-box" cols="60" rows="5"></textarea>
+            <br>
+            <button id="comment-button">comment</button>
+        </div>
+    </section>
+    <script>
+        document.getElementById('comment-button').addEventListener('click', function(){
+            // click korle buttone kaj start hbe & function call hoie dukbe vitoreee..............
+
+            // commet box er leka ta id dia dora holo...niche
+            const word = document.getElementById('comment-box');
+           // console.log(word);
+           //ki lika hoice aita value dia ar akta jaigay rakchi niche
+            const neww = word.value;
+        // new akta paragrap banalam jathe new comment ta aikne add korthe pari.............
+           const newComment= document.createElement('p');
+
+           // comeent ta set koralam new paragraph eeee
+           newComment.innerText=neww;
+
+           // paragrap container e niche neew comment ta set kore dilaam...
+            const newContainer = document.getElementById('container-box');
+           newContainer.appendChild(newComment);
+
+
+           //commet box er likta kete dilam
+           word.value='';
+        })
+    </script>
+</body>
+</html>

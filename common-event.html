@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <input id="updated-text" type="text" >
+    <button id="update-button">update</button>
+    <button onclick=doWrite()>onClikFunc</button>
+    <button id="direct">directFunc</button>
+
+    <script>
+        //butoon first working call function
+        function doWrite(){
+           const write= document.getElementById('text');
+           write.innerText ='set by onClickFunction';
+        }
+
+        // button second direct by js
+        document.getElementById('direct').addEventListener('click',function(){
+            const write = document.getElementById('text');
+            write.innerText = 'i am call clicking & direct function'; // text newar jnne innerText use korthe hoi
+        })
+        document.getElementById('update-button').addEventListener('click', function(){
+           const up = document.getElementById('updated-text');
+           console.log(up.value);      // input value newr niom er jnne    . value nia kaj korthe hoi
+           const write = document.getElementById('text');
+           write.innerText = up.value;
+           up.value='';
+
+        })
+
+    </script>
+</body>
+</html>

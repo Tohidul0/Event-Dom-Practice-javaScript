@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Delete kore muche feliiiiii</h1>
+    <section>
+    <p id="pere">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reiciendis maxime nostrum natus nobis unde atque pariatur suscipit quisquam nam.</p>
+    
+   
+     <button id="remove">delete</button>
+
+
+
+</section>
+    <script>
+      document.getElementById('remove').addEventListener('click', function(){
+        const lika= document.getElementById('pere');
+        lika.parentNode.removeChild(lika); // child er baper kache jai child ke remove kore dewa
+      })
+
+    </script>
+</body>
+</html>
